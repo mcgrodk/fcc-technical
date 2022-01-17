@@ -29,6 +29,7 @@
 }
 
 #navbar a {
+    font-size: 0.8em;
     color: skyblue;
     display: block;
     padding: 10px;
@@ -49,6 +50,7 @@ section, p, li, h2 {
 
 li {
   padding: 5px 10px;
+  list-style-type: disc;
 }
 
 .main-section header {
