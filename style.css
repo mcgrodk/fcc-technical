@@ -1,3 +1,5 @@
+/* Search web for Japanese typography properties/mixed-language page practices */
+
 /*CSS reset to remove awkward blank margins around page*/
 
 * {
@@ -47,6 +49,7 @@
 #main-doc {
     margin-left: 200px;
     padding: 10px;
+    font-size: 1.2rem;
 }
 
 p, ul, li, h2 {
@@ -55,8 +58,12 @@ p, ul, li, h2 {
   line-height: 1.5rem;
 }
 
+li:lang(ja-jp) {
+    font-family: Osaka;
+}
+
 section {
-    padding: 1.5rem;
+    padding: 1.25rem;
 }
 
 ul {
