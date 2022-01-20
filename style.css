@@ -27,7 +27,7 @@
 }
 
 #navbar header {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 800;
     color: skyblue;
     padding: 10px;
@@ -35,7 +35,6 @@
 }
 
 #navbar a {
-    font-size: 1em;
     color: skyblue;
     display: block;
     padding: 10px;
@@ -50,10 +49,14 @@
     padding: 10px;
 }
 
-section, p, li, h2 {
+p, ul, li, h2 {
     padding: 10px;
   max-width: 75%;
-  line-height: 1.5em;
+  line-height: 1.5rem;
+}
+
+section {
+    padding: 1.5rem;
 }
 
 ul {
@@ -67,7 +70,7 @@ li {
 
 .main-section header {
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 10px;
 }
 
@@ -75,7 +78,10 @@ li {
 code {
   background-color: #D3D3D3;
   display: block;
-  margin-left: 2em;
+  margin-left: 2rem;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 a:active {
@@ -84,6 +90,14 @@ a:active {
 
 a:visited {
     color: blue;
+}
+
+.vocab-container {
+    border: 2px solid black;
+}
+
+.vocab-container li {
+    list-style-type: none;
 }
 
 .note {
@@ -96,7 +110,7 @@ a:visited {
 footer {
     background-color: #D3D3D3;
     text-align: center;
-    padding: 1.5em;
+    padding: 1.5rem;
     width: 100%;
     margin: 0;
 }
