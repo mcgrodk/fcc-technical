@@ -10,7 +10,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: Roboto;
+    font-family: Roboto Mono;
 }
 
 /* Left navbar properties */
@@ -55,7 +55,7 @@
 p, ul, li, h2 {
     padding: 10px;
   max-width: 75%;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 li:lang(ja-jp) {
@@ -73,6 +73,10 @@ ul {
 li {
   padding: 5px 10px;
   list-style-type: disc;
+}
+
+.prereqs {
+    border-left: 0.25rem solid #348feb;
 }
 
 .main-section header {
@@ -102,6 +106,7 @@ a:visited {
 
 .vocab-container {
     border: 2px solid black;
+    margin: 1.5rem 0;
 }
 
 .vocab-container li {
