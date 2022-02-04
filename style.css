@@ -2,6 +2,9 @@
 
 /*CSS reset to remove awkward blank margins around page*/
 
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+@import url('href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"');
+
 * {
     margin: 0;
     padding: 0;
@@ -53,9 +56,9 @@
 }
 
 p, ul, li, h2 {
-    padding: 10px;
-  max-width: 75%;
-  line-height: 1.75rem;
+    padding: 0.5rem;
+    max-width: 75%;
+    line-height: 1.75rem;
 }
 
 li:lang(ja-jp) {
@@ -63,7 +66,7 @@ li:lang(ja-jp) {
 }
 
 section {
-    padding: 1.25rem;
+    padding: 1rem;
 }
 
 ul {
@@ -75,8 +78,9 @@ li {
   list-style-type: disc;
 }
 
-.prereqs {
+.note {
     border-left: 0.25rem solid #348feb;
+    background-color: #DDDDDD
 }
 
 .main-section header {
@@ -85,15 +89,40 @@ li {
     padding: 10px;
 }
 
+.main-section header code {
+    font-size: 1.25rem;
+}
+
 
 code {
   background-color: #D3D3D3;
   display: block;
-  margin-left: 2rem;
+  margin: 0.5rem 2rem;
   font-family: monospace;
   font-size: 1rem;
   line-height: 2rem;
   padding-left: 1rem;
+}
+
+.kana {
+    color: black;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    font-family: Sawarabi Mincho, monospace;
+    font-size: 1.1rem;
+}
+
+.inline-code {
+    color: black;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    font-weight: 600;
+    font-family: Sawarabi Mincho, monospace;
+    font-size: 1.1rem;
 }
 
 a:active {
@@ -111,11 +140,6 @@ a:visited {
 
 .vocab-container li {
     list-style-type: none;
-}
-
-.note {
-  border: 2px dotted black;
-  margin-top: 10px;
 }
 
 /* Footer properties */
