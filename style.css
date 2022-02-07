@@ -2,6 +2,7 @@
 @import url('href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"');
 
 /*CSS reset to remove awkward blank margins around page*/
+
 * {
     margin: 0;
     padding: 0;
@@ -37,8 +38,6 @@
     border: 2px solid skyblue;
 }
 
-/* Fix media query for scrolling on smaller displays */
-
 .nav-scroll {
     height: 90%;
     padding: 0;
@@ -48,11 +47,9 @@
 
 @media (max-height: 400px) {
     .nav-scroll {
-        max-height: 70%;
+        height: 60%;
     }
 }
-
-/* Fix the navbar display! */
 
 #navbar a {
     color: skyblue;
@@ -91,6 +88,7 @@ ul {
 
 li {
   padding: 5px 10px;
+  margin-left: 2rem;
   list-style-type: disc;
 }
 
