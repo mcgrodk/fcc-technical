@@ -1,10 +1,7 @@
-/* Search web for Japanese typography properties/mixed-language page practices */
-
-/*CSS reset to remove awkward blank margins around page*/
-
 @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
 @import url('href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"');
 
+/*CSS reset to remove awkward blank margins around page*/
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +10,8 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: Roboto Mono;
+    font-family: "Roboto Mono";
+
 }
 
 /* Left navbar properties */
@@ -42,22 +40,22 @@
 /* Fix the navbar display! */
 
 #navbar ul {
-    list-style-type: none;
     margin: 0;
-    padding: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #navbar li {
     border: 1px solid skyblue;
-    width: 100%;
+    list-style: none;
+    padding: 10px;
 }
 
 #navbar a {
     color: skyblue;
-    display: block;
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 /* Main content */
@@ -93,7 +91,8 @@ li {
 
 .note {
     border-left: 0.25rem solid #348feb;
-    background-color: #DDDDDD
+    background-color: #DDDDDD;
+    margin: 1.5rem 0;
 }
 
 .main-section header {
@@ -108,7 +107,7 @@ li {
 
 
 code {
-  background-color: #D3D3D3;
+  background-color: #DDDDDD;
   display: block;
   margin: 0.5rem 2rem;
   font-family: monospace;
@@ -138,13 +137,17 @@ code {
     font-size: 1.1rem;
 }
 
-.jp-sentence {
+.sample-sentence {
     color: black;
     font-family: "M PLUS Rounded 1c", monospace;
     display: block;
     margin: 0;
     padding: 0;
     font-size: 1rem;
+}
+
+.dialogue .sample-sentence {
+    display: inline;
 }
 
 a:active {
