@@ -26,7 +26,7 @@
 @media (max-width: 400px) {
     #navbar {
         max-width: 30%;
-    }
+}
 }
 
 #navbar header {
@@ -37,25 +37,30 @@
     border: 2px solid skyblue;
 }
 
-/* Fix the navbar display! */
+/* Fix media query for scrolling on smaller displays */
 
-#navbar ul {
-    margin: 0;
+.nav-scroll {
+    height: 90%;
     padding: 0;
-    width: 100%;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
-#navbar li {
-    border: 1px solid skyblue;
-    list-style: none;
-    padding: 10px;
+@media (max-height: 400px) {
+    .nav-scroll {
+        max-height: 70%;
+    }
 }
+
+/* Fix the navbar display! */
 
 #navbar a {
     color: skyblue;
     text-decoration: none;
     font-size: 1.1rem;
+    display: block;
+    border: 1px solid skyblue;
+    padding: 1rem 0.5rem;
 }
 
 /* Main content */
