@@ -39,12 +39,25 @@
     border: 2px solid skyblue;
 }
 
+/* Fix the navbar display! */
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#navbar li {
+    border: 1px solid skyblue;
+    width: 100%;
+}
+
 #navbar a {
     color: skyblue;
     display: block;
-    padding: 10px;
     text-decoration: none;
-    border: 1px solid skyblue;
 }
 
 /* Main content */
@@ -123,6 +136,15 @@ code {
     font-weight: 600;
     font-family: Sawarabi Mincho, monospace;
     font-size: 1.1rem;
+}
+
+.jp-sentence {
+    color: black;
+    font-family: "M PLUS Rounded 1c", monospace;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
 }
 
 a:active {
